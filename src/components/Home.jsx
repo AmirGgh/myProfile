@@ -6,14 +6,14 @@ const Home = () => {
   return (
     <div name='home' className='w-full h-screen'>
       <div className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full'>
-        <p className='text-pink-900'>Hi, my name is</p>
+        <h2 className='text-black-600 font-bold text-xl'>Hi, my name is</h2>
         <h2 className='text-3xl lg:text-5xl font-bold text-[#ccd6f6]'>
           AMIR GEZ
         </h2>
-        <h3 className='text-2xl lg:text-4xl font-bold text-[#8892b0]'>
+        <h3 className='text-2xl lg:text-4xl font-bold text-[#a9a7b5]'>
           I'm a Full Stack Developer.
         </h3>
-        <p className='text-[#8892b0] py-4 max-w-[700px]'>
+        <p className='text-[#ecf1ff] py-4 max-w-[700px]'>
           A Full Stack developer with pession to learn new things, Have a strong
           understanding of JS, React, Node, and MongoDB. And allways seeking for
           new challenges!

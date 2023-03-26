@@ -3,19 +3,19 @@ import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import Logo from "../assets/logo.png";
 import { Link } from "react-scroll";
+import profileimg from "../assets/profileimg-rem.png";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className='fixed w-full h-[50px] flex justify-between items-center px-4  text-gray-300'>
-      {/* <div>
-        <img src={Logo} alt='Logo Image' style={{ width: "200px" }} />
-      </div> */}
-
-      {/* menu */}
-      <ul className='hidden md:flex'>
+    <div className='fixed w-full h-[50px] flex justify-between items-center px-4  text-gray-300  bg-gradient-to-r from-cyan-700 to-blue-900 opacity-95 	'>
+      <img
+        className='w-10 h-10 rounded-full border-white border-2 bg-gray-300'
+        src={profileimg}
+      />
+      <ul className='hidden md:flex '>
         <li>
           <Link to='home' smooth={true} duration={650}>
             Home
@@ -42,12 +42,10 @@ const Navbar = () => {
           </Link>
         </li>
       </ul>
-
       {/* Hamburger */}
       <div onClick={handleClick} className='md:hidden z-10'>
         {!nav ? <FaBars /> : <FaTimes />}
       </div>
-
       {/* Mobile menu */}
       <ul
         className={
@@ -82,7 +80,6 @@ const Navbar = () => {
           </Link>
         </li>
       </ul>
-
       {/* Social icons */}
       <div className='hidden lg:flex fixed flex-col top-[25%] left-0'>
         <ul>

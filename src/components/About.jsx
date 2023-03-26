@@ -10,7 +10,6 @@ const About = () => {
               About
             </p>
           </div>
-          <div></div>
         </div>
         <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
           <div className='sm:text-right text-4xl font-bold'>
@@ -22,7 +21,8 @@ const About = () => {
             <p>
               I am passionate about building complex software that can be useful
               for other people with smart architecture and efficient
-              functionality.
+              functionality. <br /> As a hobby love sports, market stock, and
+              code😃
             </p>
           </div>
         </div>
